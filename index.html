@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://demo.chuanhwa.com.tw/HcManagementSystem/?pid=B03 -->
+<html lang="en" style="height: auto;"
+	class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+		integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet" />
+	<title>新竹市建築線案件管理</title>
+	<link rel="stylesheet" href="./building/css(1).css">
+	<link rel="stylesheet" href="./building/css.css">
+	<link href="./building/style.css" rel="stylesheet">
+	<script src="./building/vender/js/modernizr.js"></script>
+	<!-- Google Font: Source Sans Pro -->
+</head>
+
+<body class="sidebar-mini" style="height: auto;">
+	<div class="wrapper">
+		<!-- Navbar -->
+		<nav class="main-header navbar navbar-expand navbar-lightblue navbar-dark">
+			<!-- Left navbar links -->
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<div class="d-flex">
+						<a class="nav-link" data-widget="pushmenu"
+							href="https://demo.chuanhwa.com.tw/HcManagementSystem/?pid=B03#" role="button"><i
+								class="fas fa-bars"></i></a>
+						<div class="info">
+							<a class="nav-link mb-lg-n1"
+								href="https://demo.chuanhwa.com.tw/HcManagementSystem/Home/LogOut?token=ca0f17cd-91aa-482f-9370-08641150abff"
+								role="button"><i class="fas fa-home"></i></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!-- Right navbar links -->
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<div class="user-panel d-flex">
+						<div class="mt-2" data-letters="都"></div>
+						<div style="margin-top: 10px;color: white">都市發展處</div>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<!-- /.navbar -->
+		<!-- Main Sidebar Container -->
+		<aside class="main-sidebar sidebar-dark-primary elevation-4">
+			<!-- Brand Logo -->
+			<div class="brand-link">
+				<!--<img src="~/Images/logo.png" alt="Logo" class="brand-image img-circle elevation-3" />-->
+				<span class="brand-text">
+					<font style="font-weight:bold;color:white;">新竹市建築線案件管理</font>
+				</span>
+			</div>
+			<!-- Sidebar -->
+			<div class="sidebar os-host os-theme-dark os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-scrollbar-vertical-hidden os-host-transition"
+				style="height: calc(100vh - 60px);overflow-y: auto;overflow-x: hidden;">
+				<div class="os-resize-observer-host observed">
+					<div class="os-resize-observer" style="left: 0px; right: auto;"></div>
+				</div>
+				<div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;">
+					<div class="os-resize-observer"></div>
+				</div>
+				<div class="os-content-glue" style="margin: 0px -8px; width: 249px; height: 820px;"></div>
+				<div class="os-padding">
+					<div class="os-viewport os-viewport-native-scrollbars-invisible">
+						<div class="os-content" style="padding: 0px 8px; height: 100%; width: 100%;">
+							<!-- Sidebar Menu -->
+							<nav class="mt-1">
+								<ul class="nav nav-pills nav-sidebar flex-column ml-n3" data-widget="treeview"
+									role="menu" data-accordion="false">
+									<!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+									<li class="nav-item" style="color: white;">
+										<button type="button" class="btn nav-link btn-selected"
+											onclick="setUrl('./applyManage.html' + '' ,this)">
+											<i class="fa fa-circle nav-icon" style="padding-top: 6px;"></i>
+											<p>
+												案件查詢
+											</p>
+										</button>
+									</li>
+									<!-- menu-close關閉 -->
+									<li class="nav-item menu-open" style="color: white;">
+										<a class="nav-link">
+											<i class="fa fa-circle nav-icon" style="padding-top: 6px;"></i>
+											<p>
+												案件管理
+											</p>
+											<i class="fas fa-angle-left right mt-1"></i>
+										</a>
+										<ul class="nav nav-treeview">
+											<li class="nav-item">
+												<button type="button" class="btn nav-link sub-link"
+													onclick="setUrl('./applyUse.html' + '' ,this)">
+													<i class="far fa-circle nav-icon"></i>
+													<p class="small">
+														待審案件
+													</p>
+												</button>
+											</li>
+											<li class="nav-item">
+												<button type="button" class="btn nav-link sub-link"
+													onclick="setUrl('./applyUse2.html' + '' ,this)">
+													<i class="far fa-circle nav-icon"></i>
+													<p class="small">
+														待決行案件
+													</p>
+												</button>
+											</li>
+											<li class="nav-item">
+												<button type="button" class="btn nav-link sub-link"
+													onclick="setUrl('./applyUse3.html' + '' ,this)">
+													<i class="far fa-circle nav-icon"></i>
+													<p class="small">
+														待繳費案件
+													</p>
+												</button>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item menu-open" style="color: white;">
+										<a class="nav-link">
+											<i class="fa fa-circle nav-icon" style="padding-top: 6px;"></i>
+											<p>
+												統計報表
+											</p>
+											<i class="fas fa-angle-left right mt-1"></i>
+										</a>
+										<ul class="nav nav-treeview">
+											<li class="nav-item">
+												<button type="button" class="btn nav-link sub-link"
+													onclick="setUrl('./statistics.html' + '' ,this)">
+													<i class="far fa-circle nav-icon"></i>
+													<p class="small">
+														統計報表
+													</p>
+												</button>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item menu-open" style="color: white;">
+										<a class="nav-link">
+											<i class="fa fa-circle nav-icon" style="padding-top: 6px;"></i>
+											<p>
+												系統管理
+											</p>
+											<i class="fas fa-angle-left right mt-1"></i>
+										</a>
+										<ul class="nav nav-treeview">
+											<li class="nav-item">
+												<button type="button" class="btn nav-link sub-link"
+													onclick="setUrl('personManager.html' + '' ,this)">
+													<i class="far fa-circle nav-icon"></i>
+													<p class="small">
+														轄區承辦管理
+													</p>
+												</button>
+											</li>
+											<li class="nav-item">
+												<button type="button" class="btn nav-link sub-link"
+													onclick="setUrl('./permission.html' + '' ,this)">
+													<i class="far fa-circle nav-icon"></i>
+													<p class="small">
+														權限管理
+													</p>
+												</button>
+											</li>
+											<li class="nav-item">
+												<button type="button" class="btn nav-link sub-link"
+													onclick="setUrl('./parameter.html' + '', this)">
+													<i class="far fa-circle nav-icon"></i>
+													<p class="small">
+														參數設定
+													</p>
+												</button>
+											</li>
+											<li class="nav-item">
+												<button type="button" class="btn nav-link sub-link"
+													onclick="setUrl('./systemLog.html'+ '', this)">
+													<i class="far fa-circle nav-icon"></i>
+													<p class="small">
+														系統紀錄
+													</p>
+												</button>
+											</li>
+											<li class="nav-item">
+												<button type="button" class="btn nav-link sub-link"
+													onclick="setUrl('./systemLog_Automatic.html'+ '', this)">
+													<i class="far fa-circle nav-icon"></i>
+													<p class="small">
+														系統紀錄-自動化
+													</p>
+												</button>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+
+							<!-- <li class="nav-item">
+										<button type="button" class="btn nav-link sub-link"
+											onclick="setUrl('./systemLog_Automatic.html'+ '', this)">
+											<i class="far fa-circle nav-icon"></i>
+											<p class="small">
+												系統紀錄-自動化
+											</p>
+										</button>
+									</li> -->
+
+							<!-- /.sidebar-menu -->
+						</div>
+					</div>
+				</div>
+				<div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable">
+					<div class="os-scrollbar-track os-scrollbar-track-off">
+						<div class="os-scrollbar-handle" style="width: 100%; transform: translate(0px, 0px);"></div>
+					</div>
+				</div>
+				<div class="os-scrollbar os-scrollbar-vertical os-scrollbar-unusable">
+					<div class="os-scrollbar-track os-scrollbar-track-off">
+						<div class="os-scrollbar-handle" style="height: 100%; transform: translate(0px, 0px);"></div>
+					</div>
+				</div>
+				<div class="os-scrollbar-corner"></div>
+			</div>
+			<!-- /.sidebar -->
+		</aside>
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper" style="min-height: 824px;">
+			<!-- Main content -->
+			<div style="height:calc(100vh - 60px);width:100%;overflow:hidden">
+				<div class="load-icon hidden"></div>
+				<div id="defaultDiv" class="pt-5" style="margin:auto;text-align:center;">
+					<span style="font-size:2em;color:palevioletred;">
+						&lt; -- 請點選左方選單來開始您的作業
+					</span>
+				</div>
+				<iframe id="subWindow" src="./building/saved_resource.html" frameborder="0" scrolling="auto"
+					style="height: 100%; width: 100%;">
+				</iframe>
+				<iframe src="./building/NewLogin.html" frameborder="0" style="height: 0; width: 0; visibility: hidden;">
+				</iframe>
+				<iframe src="./building/NewLogin(1).html" frameborder="0"
+					style="height: 0; width: 0; visibility: hidden;">
+				</iframe>
+				<iframe src="./building/NewLogin(2).html" frameborder="0"
+					style="height: 0; width: 0; visibility: hidden;">
+				</iframe>
+			</div>
+			<!-- /.content -->
+		</div>
+		<!-- /.content-wrapper -->
+		<!-- Control Sidebar -->
+		<aside class="control-sidebar control-sidebar-dark">
+			<!-- Control sidebar content goes here -->
+			<div class="p-3">
+				<h5>Title</h5>
+				<p>Sidebar content</p>
+			</div>
+		</aside>
+		<!-- /.control-sidebar -->
+		<div id="sidebar-overlay"></div>
+	</div>
+
+	<!-- ./wrapper -->
+	<!-- REQUIRED SCRIPTS -->
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.3/css/OverlayScrollbars.css"
+		integrity="sha512-LSGPGnehGYGsh7/QTPRwe1VGplv3tVHmlDw6hI/hrEYaaI0OBFE2x6Pdo8DdAKIkJuYfbShXwDjq/SJxbsE9Tg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src='https://code.jquery.com/jquery-3.6.0.js'></script>
+
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.3/js/OverlayScrollbars.min.js"
+		integrity="sha512-Ae2SccSxoNp/Cn7PIlowLk8cmVyyW5aSCbrB/k08h/yYeK3zrNJ/oAJf8RK/ZD95G8KjkzPIXxKbeYPn43KC0w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+	<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/js/adminlte.min.js"></script>
+	<script src="./building/vender/js/bootstrap.js"></script>
+	<script src="./building/vender/js/element.js"></script>
+	<script type="text/javascript">
+		function DoneLoading() {
+			$(".load-icon").addClass("hidden");
+		}
+		document.getElementById("subWindow").onload = function () { DoneLoading() };
+	</script>
+
+	<script>
+		function setUrl(url, self) {
+			$("#defaultDiv").addClass("hidden");
+			$(".load-icon").removeClass("hidden");
+			$("#subWindow").prop("src", url);
+			$('.btn-selected').removeClass('btn-selected');
+			$(self).addClass('btn-selected');
+		}
+		function toggleItems(div, self) {
+			$("#" + div).toggleClass("hidden");
+			$(self).find('i.fas').toggleClass(' fa-angle-right').toggleClass(' fa-angle-down');
+		}
+		// $(function () {
+		// 	$(".sidebar").overlayScrollbars({
+		// 		overflowBehavior: {
+		// 			x: "hidden"
+		// 		}
+		// 	});
+		// });
+	</script>
+
+
+
+</body>
+
+</html>

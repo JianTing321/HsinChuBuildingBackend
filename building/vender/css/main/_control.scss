@@ -1,0 +1,208 @@
+// 控制頁高，即便內容過少 也會將頁腳顯示
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: rgb(247, 247, 247);
+
+	.main {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	main {
+		min-height: calc(100% - $headerH - $footerH);
+
+		/*減去footer高度*/
+		section.content {
+			padding: 10px 0;
+			text-align: center;
+			box-sizing: border-box;
+		}
+	}
+
+	table {
+		width: 100%;
+
+		tr {
+			line-height: $tdH;
+
+			th {
+				background-color: $color;
+				color: $white;
+				line-height: $thH;
+
+				span {
+					color: $white;
+					font-size: $h6;
+					font-weight: lighter;
+				}
+
+				i::after,
+				i::before {
+					color: $white ;
+				}
+
+				i:hover {
+					color: $white ;
+
+					span {
+						color: $white;
+
+						font-size: $h5;
+						font-weight: lighter;
+					}
+				}
+
+				td {
+					line-height: $tdH;
+					height: $tdH;
+
+
+					.btn {
+						vertical-align: middle;
+						margin: auto;
+					}
+				}
+			}
+		}
+	}
+
+	div.borderLeft {
+		margin-bottom: 10px;
+	}
+
+
+
+	div.mainText {
+		width: 150px;
+		color: $color;
+		font-weight: bold;
+		font-size: $h5;
+		text-align-last: left;
+	}
+
+
+	// 定義所有表格為分散對齊的格式
+	div.formTitle {
+		width: 150px;
+		color: $color;
+		font-weight: bold;
+		font-size: $h6;
+		text-align-last: left;
+	}
+
+	.formListCh {
+		font-weight: bold;
+		margin-right: 20px;
+		width: 100px;
+		color: $color;
+
+	}
+
+	div.addressA {
+		margin: 5px 0 5px 0;
+	}
+
+	.btnBack {
+		line-height: 32px;
+		width: 100px;
+		height: 32px;
+		font-size: $h5;
+		line-height: $h6 ;
+		color: $white;
+		border-radius: .2rem;
+	}
+
+	.trashCan {
+		width: $btnH;
+		height: $btnH;
+	}
+
+	// 按鈕顏色
+	.btn-primary {
+		background-color: $color;
+	}
+
+	.btn-primary:hover {
+		background-color: $color1_active;
+		color: $white;
+	}
+
+	// 按鈕顏色2
+	.btn-outline-primary {
+		color: $color;
+		border-color: $color;
+	}
+
+	.btn-outline-primary:hover {
+		background-color: $color1_active;
+	}
+
+	// 按鈕顏色3
+	.btn-warning {
+		background-color: $color2;
+	}
+
+	.btn-warning:hover {
+		background-color: #a85a00;
+		color: $white;
+	}
+
+	// 按鈕顏色4
+	.btn-danger {
+		background-color: $color7;
+		color: $white;
+	}
+
+	.btn-danger:hover {
+		background-color: red;
+	}
+}
+
+* {
+	font-family: Noto Sans TC;
+}
+
+
+header.v-toolbar {
+	flex: none;
+}
+
+div.v-list-item__title {
+	text-align: left;
+}
+
+.teal {
+	background-color: $color;
+}
+
+v-list-item-contentA {
+	display: flex;
+	flex-direction: row;
+}
+
+.v-application--wrap {
+	min-height: 0vh !important;
+}
+
+.ApplyListLand {
+	th {
+		color: $color;
+		background-color: transparent;
+		padding: 0;
+		border-bottom: 3px solid $color;
+	}
+
+	tr {}
+
+	td {
+		font-size: $h6;
+
+
+		color: $color;
+		font-weight: bold;
+	}
+}

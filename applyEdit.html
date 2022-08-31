@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link id=link>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+		integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+	<link rel="stylesheet" href="https://unpkg.com/@mdi/font@6.x/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+	<!-- 引入vue -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<!-- 引入样式 -->
+	<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	<!-- 引入组件库 -->
+	<link rel="stylesheet" href="https://unpkg.com/vuetify@2.6.9/dist/vuetify.min.css">
+
+	<link rel="stylesheet" href="./building/style.css">
+	<title>element</title>
+</head>
+
+<body>
+	<section class="all">
+		<main>
+			<section class="content main">
+				<section class="content">
+					<!-- 以上皆固定 -->
+					<form class="applySearch">
+						<div class="mb-12">
+							<div class="borderLeft">
+								<div class="mainText">案件管理</div>
+							</div>
+							<div id="app"></div>
+							<article class="map">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2511.9272787642603!2d120.96352708382786!3d24.81384777264157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1661140110957!5m2!1szh-TW!2stw"
+									frameborder="0" scrolling="yes" seamless="seamless"
+									style="display:block; width:100%; height:50vh;"></iframe>
+							</article>
+							<div class="row row-cols-12 row-cols-md-12 g-4">
+								<div class="col-6 mainCard">
+									<div class="containerMember">
+										<div class="card">
+											<div class="card-body">
+												<div class="title">
+													<h5 class="formTitle">申請人姓名</h5>
+												</div>
+												<div class="input row-cols-12">
+													<div class="col-6">
+														<div class="formtitle ">姓名</div>
+														<input type="text" value="陳小姐" disabled>
+													</div>
+													<div class="col-6">
+														<div class="formtitle">聯絡電話</div>
+														<input type="text" value="03-9999999">
+													</div>
+													<div class="col-12">
+														<div class="formtitle">地址</div>
+														<input type="text" value="新竹市香山區中華路五段125巷520號">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="containerMember">
+										<div class="card">
+											<div class="card-body">
+												<div class="title">
+													<h5 class="formTitle">代辦業者</h5>
+												</div>
+												<div class="input row-cols-12">
+													<div class="col-6">
+														<div class="formtitle ">姓名</div>
+														<input type="text" value="彭小宏">
+													</div>
+													<div class="col-6">
+														<div class="formtitle">聯絡電話</div>
+														<input type="text" value="03-9999999">
+													</div>
+													<div class="col-12">
+														<div class="formtitle">地址</div>
+														<input type="text" value="新竹市北區竹光路260號">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="containerMember">
+										<div class="card">
+											<div class="card-body">
+												<div class="title">
+													<h5 class="formTitle">建築師事務所</h5>
+												</div>
+												<div class="input row-cols-12">
+													<div class="col-6">
+														<div class="formtitle ">名稱</div>
+														<input type="text" value="陳小明建築師事務所">
+													</div>
+													<div class="col-6">
+														<div class="formtitle">聯絡電話</div>
+														<input type="text" value="0912345678">
+													</div>
+													<div class="col-6">
+														<div class="formtitle ">建築師姓名</div>
+														<input type="text" value="陳小明">
+													</div>
+													<div class="col-6">
+														<div class="formtitle">證書字號</div>
+														<input type="text" value="建開證字第1000號">
+													</div>
+													<div class="col-12">
+														<div class="formtitle">地址</div>
+														<input type="text" value="新竹市香山區中華路五段125巷520號">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="containerMember">
+										<div class="card">
+											<div class="card-body">
+												<div class="title">
+													<h5 class="formTitle">申請事由&其他</h5>
+												</div>
+												<div class="input row-cols-12">
+													<div class="col-6">
+														<div class="formtitle ">基地地點</div>
+														<input type="text" value="新竹市北區中正路">
+													</div>
+													<div class="col-6">
+														<div class="formtitle">申請事由</div>
+														<input type="text" value="法定空地分割">
+													</div>
+													<div class="col-12">
+														<div class="formtitle">備註</div>
+														<textarea name="" id="" rows="4"></textarea>
+														<!-- <input style="height:150px" type="text"
+															value="新北市汐止區新台五路一段159號5樓"> -->
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="containerMember">
+										<div class="card">
+											<div class="card-body">
+												<div class="input row-cols-12">
+													<div class="col-4">
+														<div class="formtitle ">申請日期</div>
+														<input value="2022/03/19" disabled>
+													</div>
+													<div class="col-4">
+														<div class="formtitle">案件進度</div>
+														<input type="text" value="待補件">
+													</div>
+													<div class="col-4">
+														<div class="formtitle">繳費進度</div>
+														<input type="text" value="未繳費">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="containerMember">
+										<div class="card">
+											<div class="card-body">
+												<div class="title">
+													<h5 class="formTitle">申請事由&其他</h5>
+												</div>
+												<div class="input row-cols-12">
+													<div class="col-10 fileCenterArea">
+														<div class="formtitle ">單一附件</div>
+														<div class="fileCenter row-cols-12 borderTop">
+															<div class="formtext col-3"><a
+																	href=""><span>1.</span>掛號申請書</a></div>
+															<div class="formtext col-3"><a
+																	href=""><span>2.</span>建築線指示(定)申請書</a></div>
+															<div class="formtext col-3"><a
+																	href=""><span>3.</span>使用分區證明</a></div>
+															<div class="formtext col-3"><a
+																	href=""><span>4.</span>土地登記謄本</a></div>
+															<div class="formtext col-3"><a
+																	href=""><span>5.</span>都市計畫圖</a></div>
+															<div class="formtext col-3"><a
+																	href=""><span>6.</span>都市計畫樁位圖</a></div>
+															<div class="formtext col-3"><a
+																	href=""><span>7.</span>紙本地籍套繪圖</a></div>
+															<div class="formtext col-3"><a
+																	href=""><span>8.</span>電子地籍套繪圖</a></div>
+															<div class="formtext col-3"><a
+																	href=""><span>9.</span>現況實測圖</a></div>
+															<div class="formtext col-3"><a
+																	href=""><span>10.</span>現況照片</a></div>
+															<div class="formtext col-3"><a
+																	href=""><span>11.</span>掛號申請書</a></div>
+															<div class="formtext col-3"><a
+																	href=""><span>12.</span>建築線申請書圖</a></div>
+															<div class="formtext col-3"><a
+																	href=""><span>13.</span>地籍套繪圖</a></div>
+															<div class="formtext col-3"><a
+																	href=""><span>14.</span>現況計畫圖</a></div>
+															<div class="formtext col-3"><a
+																	href=""><span>15.</span>其他與申請案有關之參考資料</a></div>
+														</div>
+													</div>
+													<div class="col-2 fileCenterArea">
+														<div class="formtitle intotal">附件</div>
+														<div class="fileCenter row-cols-12 borderTop">
+															<div class="inTotalFile col-12 formtext"><a href="">合併</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<a><button type="button" class="btnBack btn-primary" @click="NextPage"><i
+											class="fa-solid fa-floppy-disk"></i>｜保存</button></a>
+							</div>
+						</div>
+					</form>
+				</section>
+			</section>
+		</main>
+	</section>
+	<footer>
+	</footer>
+</body>
+<script src="https://unpkg.com/babel-polyfill/dist/polyfill.min.js"></script>
+<script src="https://unpkg.com/vuetify@2.6.9/dist/vuetify.min.js"></script>
+<script src="./building/vender/js/components/permission.js"></script>
+<script src="./building/vender/js/components/applySearch.js"></script>
+<script src="./building/vender/js/components/systemLog.js"></script>
+<script src="./building//vender/js/components/systemLog_Automatic.js"></script>
+<script src="./building//vender/js/components/applyUse.js"></script>
+<script src="./building//vender/js/components/applyUse2.js"></script>
+<script src="./building//vender/js/components/applyUse3.js"></script>
+<script src="./building/vender/js/components/applyusecheck.js"></script>
+<script src="./building/vender/js/components/personmanager.js"></script>
+<script src="./building/vender/js/components/bujianlist.js"></script>
+<script src="./building/vender/js/main3.js"></script>
+
+
+<!-- <script src="./building/vender/js/element.js"></script> -->
+
+</html>
